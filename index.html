@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body{
+            background-color: black;
+            font-family: sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        .fcon{
+            display: flex;
+            width: 100%;
+        }
+        .con{
+          display: flex;
+          width: 80%;
+        }
+        .left{
+           
+            margin-left: 50px;
+            margin-top: 130px;
+            margin-bottom: auto;
+          margin-right: 100px;
+        }
+        .rht{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 150px;
+            color: white;
+            line-height: 0.5;
+           
+        }
+        .i1{
+            height: 450px;
+            width: 300px;
+            border-radius: 20px;
+            animation: 1s infinite alternate boun;
+        }
+        .name{
+            
+            font-size: 38px;
+            font-weight: 700;
+        }
+        .pa{
+            font-size: 19px;
+            line-height: 1.8;
+            width: 700px;
+            margin-top: 0%;
+        }
+        .para{
+            font-size: 20px;
+        }
+        .butt{
+            color: white;
+            background-color: transparent;
+            font-size: 15px;
+            margin-top: 15px;
+            padding: 13px 40px;
+            border-radius: 26px;
+            border: 2px solid #1a8cff;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            position: relative;
+            padding-right: 60px;
+            display: inline;
+           
+           
+        }
+       
+
+        .butt:hover .icon{
+             display: inline;
+            width: 100%;
+            padding-top: 10px;
+            height: 80%;
+            
+        }
+        
+        
+        
+        .navigation .nav{
+           display: flex;
+           justify-content: space-between;
+           flex-direction: column;
+           position: relative;
+           padding-top: 170px;
+           padding-left: 0px;
+          
+            
+        }
+        .navigation .nav a{
+            position: relative;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 25px;
+            transition: 0.5s;
+            color: white;
+        }
+        .navigation .nav a i{
+           height: 50px;
+           width: 50px;
+           line-height: 50px;
+           background-color: black;
+           border-radius: 50%;
+           text-align: center;
+           color: #fff;
+           transition: 0.5s;
+           position: relative;
+        display: inline-block;
+          
+        }
+        .navigation .nav .active{
+            background-color: #1a8cff;
+            
+
+        }
+        .navigation .nav a:hover i{
+            background-color: #1a8cff;
+            
+        }
+        
+         .icon{
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: none;
+            height: 47px;
+            width: 47px;
+            border-radius: 30px;
+            background-color: #1a8cff;
+            color: #fff;
+            font-size: 19px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s; 
+            border-top-right-radius: 23px;
+           
+           
+        }
+        .text1{
+            display: flex;
+           justify-content: space-between;
+           flex-direction: column;
+           position: relative;
+           padding-top: 165px;
+           padding-left: 10px;
+            color: white;
+            
+        }
+        
+        .text2{
+            line-height: 50px;
+            padding-top: 0%;
+            padding-bottom: 0%;
+           
+
+        }
+        
+        .a2{
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+            height: 47px;
+            width: 47px;
+            border-radius: 30px;
+            background-color: #1a8cff;
+            color: #fff;
+            font-size: 19px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s; 
+            border-top-right-radius: 23px;
+           
+        }
+        .a1{
+            color: white;
+            background-color: transparent;
+            font-size: 15px;
+            margin-top: 15px;
+            padding: 13px 40px;
+            border-radius: 26px;
+            border: 2px solid #1a8cff;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            position: relative;
+            padding-right: 60px;
+        }
+        .a1:hover .a2{
+             display: inline;
+            width: 100%;
+            
+            height: 80%;
+            
+        }
+        .nav1{
+            
+            height: 50px;
+           width: 50px;
+           line-height: 75px;
+           background-color: black;
+           border-radius: 50%;
+           text-align: center;
+           color: black;
+           transition: 0.5s;
+           margin-top: 190px;
+           margin-left: 70px;
+           margin-right: 25px;
+           
+        }
+        .hover-text {
+        position: relative;
+        display: inline-block;
+    }
+    .hover-text:hover::after {
+        content: attr(data-hover-text);
+        position: absolute;
+        bottom: 70%;
+        left: 1%;
+        top: 30%;
+       
+        transform: translateX(-100%);
+        
+        color: #fff;
+        padding: 5px 10px;
+        background-color: transparent;
+        border-radius: 5px;
+        white-space: nowrap;
+    }
+    .sa{
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+    
+    @keyframes boun {
+        0%{ transform: translateY(0);}
+        100%{
+            transform: translateY(-0%);
+        }
+    }
+    
+        
+    </style>
+</head>
+<body>
+    
+    <div class="fcon">
+        <div class="con">
+            <div class="left">
+                
+                    <img src="pf.jpg " class="i1">
+                
+            
+            </div>
+            <div class="rht">
+                <div>
+                    <p class="para">HI THERE !</p>
+                <P class="name">I'M <span style="color:#3c88d3;font-size: 38px;font-weight: 700;letter-spacing: .5px;">SANDHIYA BALASUBRAMANIAN</span></p>
+                  <p class="sa"> And I'm a <span id="element"></span> </p>  
+
+                    
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                  
+                   
+                    <script>
+                      var typed = new Typed('#element', {
+                        strings: ['Developer', 'Programmer'],
+                        typeSpeed: 150,
+                        backSpeed: 150,
+                        loop : true
+                      });
+                    </script>
+                
+                <P class="pa">Goal-oriented professional looking for a position as a Web Designer with significant web design skills and the
+                     ability to develop attractive web pages using a variety of software and tools.</P>
+                <div class="bu">
+                    <a href="about.html">
+                        
+                            <button class="butt">View Resume<span class="icon"><i class="fa fa-address-book"></i></span></button>
+                       
+                       
+                   
+                    </a>
+                     
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="nav1">
+            Home 
+            Profile
+            projects
+            Contact
+        </div>
+       <div class="ms">
+        <div class="navigation">
+           
+            <div class="nav">
+               <a href="pf.html">
+                <span class="hover-text " data-hover-text="Home"><i class="fa fa-home active"></i></span>
+                
+               
+               </a> 
+               <a href="about.html">
+                <span class="hover-text" data-hover-text="Profile"><i class="fa fa-user"></i></span>
+               </a> 
+               <a href="project.html">
+                <span class="hover-text" data-hover-text="Projects"><i class="fa fa-sitemap"></i></span>
+                <a href="acti.html">
+                    <span class="hover-text" data-hover-text="Activities"><i class="fa fa-briefcase"></i></span>
+                    
+                   </a>
+                   
+               </a> 
+               <a href="contact.html">
+                <span class="hover-text" data-hover-text="Contact"><i class="fa fa-phone"></i></span>
+                
+               </a>
+               
+               
+                     
+            </div>
+        </div>
+       </div>
+       
+        
+    </div>
+    
+</body>
+</html>
